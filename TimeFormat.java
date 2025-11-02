@@ -15,7 +15,7 @@ public class TimeFormat {
         // Replace this comment with the rest of your code
 		String period = "AM"; 
 		if (hours == 0) {
-			hours = 12;
+			hours = 0;
 			period = "AM";
 		}
 		else if (hours == 12){
@@ -25,7 +25,7 @@ public class TimeFormat {
 		else if (hours > 12){
 			hours = hours - 12;
 			period = "PM";
-		} 
+		}
 		else {
 			period = "AM"; 
 		}
